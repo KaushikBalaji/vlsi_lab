@@ -1,4 +1,4 @@
-module SyncCounter #(parameter X=5)(input clk, input enable, input reset, input mode, output reg[2:0] count_out);
+module SyncCounter #(parameter X=6)(input clk, input enable, input reset, input mode, output reg[2:0] count_out);
 
 wire[2:0] reg_out;
 
@@ -8,4 +8,3 @@ always @(posedge clk) begin
 	count_out <= reg_out;
 end
 endmodule
-
