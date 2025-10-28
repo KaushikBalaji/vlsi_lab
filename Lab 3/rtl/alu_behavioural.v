@@ -1,11 +1,11 @@
 module ALU #(
     parameter N = 8
 )(
-    input  [N-1:0] A, B,     // Operands
-    input  [2:0]   opcode,       // Operation code
-    output reg [N-1:0] Y,    // Result
-    output reg CF,           // Carry flag
-    output reg ZF            // Zero flag
+    input [N-1:0] A, B,
+    input [2:0] opcode,
+    output reg [N-1:0] Y,
+    output reg CF,
+    output reg ZF
 );
 
     reg [N:0] tmp;
@@ -63,8 +63,9 @@ module ALU #(
             end
         endcase
 
-        // Zero Flag
         ZF = (Y == 0);
     end
 
 endmodule
+
+

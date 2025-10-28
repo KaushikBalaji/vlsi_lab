@@ -1,0 +1,78 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : ALU
+Version: U-2022.12-SP5
+Date   : Wed Oct 15 02:36:27 2025
+****************************************
+
+Operating Conditions: tsl18fs120_scl_ss   Library: tsl18fs120_scl_ss
+Wire Load Model Mode: top
+
+  Startpoint: opcode[2] (input port clocked by clk)
+  Endpoint: ZF (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ALU                8000                  tsl18fs120_scl_ss
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.25       0.25 f
+  opcode[2] (in)                           0.00       0.25 f
+  U144/ZN (invbdf)                         0.05       0.30 r
+  U204/ZN (nd02d2)                         0.07       0.38 f
+  U174/ZN (invbd2)                         0.08       0.46 r
+  U165/ZN (inv0d2)                         0.04       0.50 f
+  U188/ZN (nd02d2)                         0.08       0.58 r
+  U186/ZN (nd02d2)                         0.07       0.65 f
+  U171/ZN (aoi31d2)                        0.31       0.96 r
+  rca_inst/B[0] (RCA_N8)                   0.00       0.96 r
+  rca_inst/U27/ZN (inv0d2)                 0.06       1.02 f
+  rca_inst/U58/ZN (nd02d2)                 0.08       1.10 r
+  rca_inst/U85/ZN (nd02d2)                 0.09       1.20 f
+  rca_inst/U24/ZN (inv0d2)                 0.08       1.28 r
+  rca_inst/U53/ZN (nd02d2)                 0.07       1.35 f
+  rca_inst/U49/ZN (nd02d2)                 0.11       1.46 r
+  rca_inst/U36/Z (xr02d7)                  0.51       1.97 r
+  rca_inst/U2/ZN (inv0d2)                  0.05       2.02 f
+  rca_inst/U30/Z (buffd2)                  0.15       2.16 f
+  rca_inst/U45/ZN (oai322d2)               0.79       2.96 r
+  rca_inst/U91/ZN (nd02d2)                 0.09       3.05 f
+  rca_inst/U86/ZN (inv0d2)                 0.10       3.15 r
+  rca_inst/U28/ZN (inv0d2)                 0.06       3.20 f
+  rca_inst/U64/ZN (nd03d2)                 0.08       3.28 r
+  rca_inst/U65/ZN (nd02d2)                 0.09       3.37 f
+  rca_inst/U68/ZN (oai322d4)               0.64       4.02 r
+  rca_inst/U81/ZN (nd02d2)                 0.08       4.10 f
+  rca_inst/U4/Z (an02d2)                   0.30       4.40 f
+  rca_inst/U16/ZN (inv0d2)                 0.08       4.48 r
+  rca_inst/U59/Z (xr02d1)                  0.46       4.93 f
+  rca_inst/Sum[5] (RCA_N8)                 0.00       4.93 f
+  U173/ZN (nd02d2)                         0.09       5.02 r
+  U154/Z (an02d2)                          0.21       5.23 r
+  U140/ZN (nd02d1)                         0.09       5.32 f
+  U139/ZN (nd12d1)                         0.18       5.51 f
+  U176/ZN (nr02d1)                         0.14       5.64 r
+  ZF (out)                                 0.00       5.64 r
+  data arrival time                                   5.64
+
+  clock clk (rise edge)                    6.00       6.00
+  clock network delay (ideal)              0.00       6.00
+  clock uncertainty                       -0.10       5.90
+  output external delay                   -0.25       5.65
+  data required time                                  5.65
+  -----------------------------------------------------------
+  data required time                                  5.65
+  data arrival time                                  -5.64
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+

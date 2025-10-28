@@ -1,0 +1,56 @@
+****************************************
+Report : power
+        -analysis_effort low
+Design : ALU
+Version: U-2022.12-SP5
+Date   : Wed Oct 15 02:24:29 2025
+****************************************
+
+
+Library(s) Used:
+
+    tsl18fs120_scl_ss (File: /home/SCL_PDK/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/4M1IL/liberty/lib_flow_ss/tsl18fs120_scl_ss.db)
+
+
+Operating Conditions: tsl18fs120_scl_ss   Library: tsl18fs120_scl_ss
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+ALU                    4000              tsl18fs120_scl_ss
+
+
+Global Operating Voltage = 1.62 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =  76.0983 uW   (70%)
+  Net Switching Power  =  32.3348 uW   (30%)
+                         ---------
+Total Dynamic Power    = 108.4331 uW  (100%)
+
+Cell Leakage Power     =  71.3966 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)  i
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  7.6098e-02        3.2335e-02        7.1397e+04            0.1085  ( 100.00%)
+--------------------------------------------------------------------------------------------------
+Total          7.6098e-02 mW     3.2335e-02 mW     7.1397e+04 pW         0.1085 mW

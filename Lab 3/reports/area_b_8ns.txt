@@ -1,0 +1,28 @@
+****************************************
+Report : area
+Design : ALU
+Version: U-2022.12-SP5
+Date   : Wed Oct 15 02:26:22 2025
+****************************************
+
+Library(s) Used:
+
+    tsl18fs120_scl_ss (File: /home/SCL_PDK/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/4M1IL/liberty/lib_flow_ss/tsl18fs120_scl_ss.db)
+
+Number of ports:                           88
+Number of nets:                           208
+Number of cells:                          127
+Number of combinational cells:            123
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                         46
+Number of references:                      21
+
+Combinational area:               3703.610051
+Buf/Inv area:                      686.740004
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:              58.869399
+
+Total cell area:                  3703.610051
+Total area:                       3762.479450

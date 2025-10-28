@@ -1,4 +1,4 @@
-module fibo #(parameter N=32)(input clk, input reset, output [N-1:0] fib_out);
+module fibo #(parameter N=4)(input clk, input reset, output [N-1:0] fib_out);
   wire [N-1:0] a, b;
   wire [N-1:0] add_out;
   wire [N-1:0] next_a, next_b;

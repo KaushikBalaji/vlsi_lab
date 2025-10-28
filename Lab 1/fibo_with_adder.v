@@ -1,20 +1,14 @@
-module fibo #(parameter N=32)(
-    input clk,
-    input reset,
+module fibo #(parameter N=4)(
+    input clk,input reset,
     output reg [N-1:0] reg1
 );
     reg [N-1:0] reg0;
     wire [N-1:0] sum;   // output of ripple adder
     wire cout;          // carry out (not really needed for Fibonacci, but kept)
 
-    // Instantiate the ripple adder
     ripple_adder #(N) RA (
-        .a(reg0),
-        .b(reg1),
-        .cin(1'b0),
-        .sum(sum),
-        .cout(cout)
-    );
+        .a(reg0), .b(reg1), .cin(1'b0),
+        .sum(sum), .cout(cout) );
 
     always @(posedge clk) begin
         if (reset) begin
@@ -28,3 +22,4 @@ module fibo #(parameter N=32)(
         end
     end
 endmodule
+

@@ -1,0 +1,66 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : ALU
+Version: U-2022.12-SP5
+Date   : Wed Oct 15 02:25:27 2025
+****************************************
+
+Operating Conditions: tsl18fs120_scl_ss   Library: tsl18fs120_scl_ss
+Wire Load Model Mode: top
+
+  Startpoint: B[0] (input port clocked by clk)
+  Endpoint: ZF (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ALU                4000                  tsl18fs120_scl_ss
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.25       0.25 r
+  B[0] (in)                                0.00       0.25 r
+  sub_26/B[0] (ALU_DW01_sub_0)             0.00       0.25 r
+  sub_26/U17/ZN (inv0d2)                   0.07       0.32 f
+  sub_26/U7/ZN (inv0d1)                    0.10       0.42 r
+  sub_26/U18/ZN (nd02d2)                   0.10       0.52 f
+  sub_26/L1(1)/U2/CO (ad01d1)              0.34       0.85 f
+  sub_26/U4/Z (buffd3)                     0.25       1.11 f
+  sub_26/L1(2)/U2/CO (ad01d1)              0.33       1.44 f
+  sub_26/U2/Z (buffd3)                     0.25       1.70 f
+  sub_26/L1(3)/U2/CO (ad01d1)              0.33       2.03 f
+  sub_26/U5/Z (buffd3)                     0.25       2.28 f
+  sub_26/L1(4)/U2/CO (ad01d1)              0.33       2.62 f
+  sub_26/U3/Z (buffd3)                     0.25       2.87 f
+  sub_26/L1(5)/U2/CO (ad01d1)              0.33       3.20 f
+  sub_26/U1/Z (buffd3)                     0.25       3.46 f
+  sub_26/L1(6)/U2/CO (ad01d1)              0.33       3.79 f
+  sub_26/U6/Z (buffd3)                     0.25       4.05 f
+  sub_26/L1(7)/U2/S (ad01d1)               0.45       4.49 f
+  sub_26/DIFF[7] (ALU_DW01_sub_0)          0.00       4.49 f
+  U144/ZN (aoi222d2)                       0.45       4.94 r
+  U110/ZN (oai211d2)                       0.33       5.28 f
+  U85/Z (or04d1)                           0.51       5.79 f
+  U150/ZN (nr02d1)                         0.14       5.93 r
+  ZF (out)                                 0.00       5.93 r
+  data arrival time                                   5.93
+
+  clock clk (rise edge)                    8.00       8.00
+  clock network delay (ideal)              0.00       8.00
+  clock uncertainty                       -0.10       7.90
+  output external delay                   -0.25       7.65
+  data required time                                  7.65
+  -----------------------------------------------------------
+  data required time                                  7.65
+  data arrival time                                  -5.93
+  -----------------------------------------------------------
+  slack (MET)                                         1.72
+
+
