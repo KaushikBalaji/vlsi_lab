@@ -1,0 +1,76 @@
+[icc2-lic Wed Oct 29 02:49:29 2025] Command 'report_timing' requires licenses
+[icc2-lic Wed Oct 29 02:49:29 2025] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Wed Oct 29 02:49:29 2025] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Wed Oct 29 02:49:29 2025] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Wed Oct 29 02:49:29 2025] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Wed Oct 29 02:49:29 2025] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Wed Oct 29 02:49:29 2025] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Wed Oct 29 02:49:29 2025] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Wed Oct 29 02:49:29 2025] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Wed Oct 29 02:49:29 2025] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Wed Oct 29 02:49:29 2025] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Wed Oct 29 02:49:29 2025] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Wed Oct 29 02:49:29 2025] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Wed Oct 29 02:49:29 2025] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Wed Oct 29 02:49:29 2025] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Wed Oct 29 02:49:29 2025] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Wed Oct 29 02:49:29 2025] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Wed Oct 29 02:49:29 2025] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Wed Oct 29 02:49:29 2025] Check-out of alternate set of keys directly with queueing was successful
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : fibo
+Version: U-2022.12-SP6
+Date   : Wed Oct 29 02:49:29 2025
+****************************************
+
+  Startpoint: a_reg[14] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: a_reg[31] (rising edge-triggered flip-flop clocked by clk)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (propagated)                 0.01      0.01
+
+  a_reg[14]/CP (dfcrq4)                            0.00      0.01 r
+  a_reg[14]/Q (dfcrq4)                             0.55      0.56 r
+  add_9/ctmTdsLR_1_2938/ZN (nr02d2)                0.06      0.62 f
+  add_9/copt_gre_mt_inst_3498/Z (bufbd3)           0.14      0.75 f
+  add_9/ctmTdsLR_1_2867/ZN (nr02d1)                0.13      0.88 r
+  add_9/copt_gre_mt_inst_3537/Z (buffd1)           0.17      1.05 r
+  add_9/ctmTdsLR_1_3317/ZN (nd02d1)                0.08      1.13 f
+  add_9/copt_gre_mt_inst_3528/Z (buffd3)           0.24      1.38 f
+  add_9/ctmTdsLR_1_3262/ZN (nr02d1)                0.11      1.49 r
+  add_9/copt_gre_mt_inst_3546/Z (buffd3)           0.15      1.64 r
+  add_9/U571/ZN (oaim21d2)                         0.32      1.96 r
+  add_9/copt_gre_mt_inst_3507/Z (bufbd7)           0.18      2.14 r
+  add_9/ctmTdsLR_1_3372/ZN (nd12d1)                0.09      2.23 f
+  add_9/copt_gre_mt_inst_3534/Z (bufbd3)           0.15      2.38 f
+  add_9/ctmTdsLR_1_3362/ZN (nd04d2)                0.25      2.64 r
+  add_9/ctmTdsLR_1_3329/ZN (aon211d2)              0.30      2.94 f
+  a_reg[31]/D (dfcrq1)                             0.00      2.94 f
+  data arrival time                                          2.94
+
+  clock clk (rise edge)                            2.00      2.00
+  clock network delay (propagated)                 0.00      2.00
+  a_reg[31]/CP (dfcrq1)                            0.00      2.00 r
+  clock uncertainty                               -0.10      1.90
+  library setup time                              -0.14      1.76
+  data required time                                         1.76
+  ------------------------------------------------------------------------
+  data required time                                         1.76
+  data arrival time                                         -2.94
+  ------------------------------------------------------------------------
+  slack (VIOLATED)                                          -1.17
+
+
+1

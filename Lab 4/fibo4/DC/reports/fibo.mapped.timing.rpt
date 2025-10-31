@@ -1,0 +1,53 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : fibo
+Version: U-2022.12-SP5
+Date   : Wed Oct 29 01:03:42 2025
+****************************************
+
+Operating Conditions: tsl18fs120_scl_ss   Library: tsl18fs120_scl_ss
+Wire Load Model Mode: top
+
+  Startpoint: a_reg[2] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: a_reg[3] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fibo               4000                  tsl18fs120_scl_ss
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  a_reg[2]/CP (dfcrq4)                     0.00       0.00 r
+  a_reg[2]/Q (dfcrq4)                      0.53       0.53 f
+  U28/ZN (invbd2)                          0.06       0.59 r
+  U30/ZN (nd02d4)                          0.35       0.94 f
+  U18/ZN (invbd2)                          0.06       1.00 r
+  U24/ZN (nr02d2)                          0.03       1.03 f
+  U22/ZN (aoi222d2)                        0.39       1.42 r
+  U20/Z (xr03d1)                           0.28       1.70 f
+  a_reg[3]/D (dfcrq1)                      0.00       1.70 f
+  data arrival time                                   1.70
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  clock uncertainty                       -0.10       1.90
+  a_reg[3]/CP (dfcrq1)                     0.00       1.90 r
+  library setup time                      -0.18       1.72
+  data required time                                  1.72
+  -----------------------------------------------------------
+  data required time                                  1.72
+  data arrival time                                  -1.70
+  -----------------------------------------------------------
+  slack (MET)                                         0.02
+
+
+1

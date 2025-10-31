@@ -1,0 +1,67 @@
+[icc2-lic Wed Oct 29 01:28:17 2025] Command 'report_timing' requires licenses
+[icc2-lic Wed Oct 29 01:28:17 2025] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Wed Oct 29 01:28:17 2025] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Wed Oct 29 01:28:17 2025] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Wed Oct 29 01:28:17 2025] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Wed Oct 29 01:28:17 2025] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Wed Oct 29 01:28:17 2025] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Wed Oct 29 01:28:17 2025] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Wed Oct 29 01:28:17 2025] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Wed Oct 29 01:28:17 2025] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Wed Oct 29 01:28:17 2025] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Wed Oct 29 01:28:17 2025] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Wed Oct 29 01:28:17 2025] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Wed Oct 29 01:28:17 2025] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Wed Oct 29 01:28:17 2025] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Wed Oct 29 01:28:17 2025] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Wed Oct 29 01:28:17 2025] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Wed Oct 29 01:28:17 2025] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Wed Oct 29 01:28:17 2025] Check-out of alternate set of keys directly with queueing was successful
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : fibo
+Version: U-2022.12-SP6
+Date   : Wed Oct 29 01:28:17 2025
+****************************************
+
+  Startpoint: a_reg[2] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: a_reg[3] (rising edge-triggered flip-flop clocked by clk)
+  Mode: func
+  Corner: nom
+  Scenario: func::nom
+  Path Group: clk
+  Path Type: max
+
+  Point                                            Incr      Path  
+  ------------------------------------------------------------------------
+  clock clk (rise edge)                            0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+
+  a_reg[2]/CP (dfcrq2)                             0.00      0.00 r
+  a_reg[2]/Q (dfcrq2)                              0.56      0.56 f
+  ctmTdsLR_1_7/ZN (nd12d1)                         0.20      0.75 f
+  ctmTdsLR_1_12/ZN (inv0d1)                        0.09      0.85 r
+  ctmTdsLR_2_13/ZN (oaim22d2)                      0.23      1.07 f
+  ctmTdsLR_1_15/Z (aor31d1)                        0.20      1.28 f
+  ctmTdsLR_3_17/Z (aoim22d2)                       0.30      1.57 f
+  a_reg[3]/D (dfcrq1)                              0.00      1.57 f
+  data arrival time                                          1.57
+
+  clock clk (rise edge)                            2.00      2.00
+  clock network delay (ideal)                      0.00      2.00
+  a_reg[3]/CP (dfcrq1)                             0.00      2.00 r
+  clock uncertainty                               -0.10      1.90
+  library setup time                              -0.18      1.72
+  data required time                                         1.72
+  ------------------------------------------------------------------------
+  data required time                                         1.72
+  data arrival time                                         -1.57
+  ------------------------------------------------------------------------
+  slack (MET)                                                0.15
+
+
+1

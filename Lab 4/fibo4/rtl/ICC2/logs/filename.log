@@ -1,0 +1,63 @@
+ 
+                              IC Compiler II (TM)
+
+             Version U-2022.12-SP6 for linux64 - Aug 25, 2023 -SLE
+
+                    Copyright (c) 1988 - 2023 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Information: Term was not able to be set up using xterm-256color . Using "xterm" by default instead. (CLE-10)
+
+
+    while executing
+"::gui_add_menu -reference {Highlight->Clear Current Color} -menu_root toplevel_layout_window_menuroot-Highlight -menu {Clear Current Color} -reference..."
+    ("eval" body line 1)
+    invoked from within
+"eval $cmd"
+    (procedure "menus::gui_add_menu" line 28)
+    invoked from within
+"gui_add_menu -menu_root $subMenu -menu "Clear Current Color" -reference_menu_root $menu_root -reference "Highlight->Clear Current Color""
+    (procedure "menus::highlight_toolbar" line 20)
+    invoked from within
+"::menus::highlight_toolbar            $root"
+    (procedure "layout_menu::create_layout_menus" line 45)
+    invoked from within
+"::layout_menu::create_layout_menus          ${::layout_menu::_mainWindowMenuRoot} 0"
+    (file "/home/synopsys/icc2/U-2022.12-SP6/auxx/gui/nwtn/nwsh/nwsh_layout.tcl" line 129)
+    invoked from within
+"tcl::source /home/synopsys/icc2/U-2022.12-SP6/auxx/gui/nwtn/nwsh/nwsh_layout.tcl"
+    invoked from within
+"source -direct /home/synopsys/icc2/U-2022.12-SP6/auxx/gui/nwtn/nwsh/nwsh_layout.tcl"
+    ("package ifneeded nwshLayout 1.0" script)
+    invoked from within
+"package require nwshLayout"
+    (in namespace eval "::" script line 9)
+    invoked from within
+"namespace eval :: {
+    # Do shell specific setup here
+    package require nwtnWindowTypes
+    package require nwtnLayoutWindowType
+    package requir..."
+    (procedure "nwshSetup::gui_start_callback" line 4)
+    invoked from within
+"::nwshSetup::gui_start_callback 1"
+icc2_shell> exit
+Maximum memory usage for this session: 346.39 MB
+Maximum memory usage for this session including child processes: 346.39 MB
+CPU usage for this session:      8 seconds (  0.00 hours)
+Elapsed time for this session:     13 seconds (  0.00 hours)
+Thank you for using IC Compiler II.
+

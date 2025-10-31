@@ -1,0 +1,62 @@
+Loading db file '/home/SCL_PDK/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/4M1IL/liberty/lib_flow_ss/tsl18fs120_scl_ss.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : RCA
+Version: U-2022.12-SP5
+Date   : Wed Oct 29 00:26:28 2025
+****************************************
+
+
+Library(s) Used:
+
+    tsl18fs120_scl_ss (File: /home/SCL_PDK/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/4M1IL/liberty/lib_flow_ss/tsl18fs120_scl_ss.db)
+
+
+Operating Conditions: tsl18fs120_scl_ss   Library: tsl18fs120_scl_ss
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+RCA                    16000             tsl18fs120_scl_ss
+
+
+Global Operating Voltage = 1.62 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  = 430.4188 uW   (91%)
+  Net Switching Power  =  43.2445 uW    (9%)
+                         ---------
+Total Dynamic Power    = 473.6633 uW  (100%)
+
+Cell Leakage Power     = 214.5323 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.3288            0.0000            0.0000            0.3288  (  69.38%)  i
+register       4.5289e-02        1.0779e-02        8.8579e+04        5.6157e-02  (  11.85%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  5.6338e-02        3.2465e-02        1.2595e+05        8.8929e-02  (  18.77%)
+--------------------------------------------------------------------------------------------------
+Total              0.4304 mW     4.3245e-02 mW     2.1453e+05 pW         0.4739 mW
+1

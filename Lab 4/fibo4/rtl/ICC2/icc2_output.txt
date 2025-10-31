@@ -1,0 +1,64 @@
+ 
+                              IC Compiler II (TM)
+
+             Version U-2022.12-SP6 for linux64 - Aug 25, 2023 -SLE
+
+                    Copyright (c) 1988 - 2023 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Information: Term was not able to be set up using xterm-256color . Using "xterm" by default instead. (CLE-10)
+icc2_shell> open_block /home/student/152502010/verilog/ex4/fibo/rtl/ICC2/FIBO_LIB:routing_done.design
+Information: User units loaded from library 'tsl18fs120_scl' (LNK-040)
+Opening block 'FIBO_LIB:routing_done.design' in edit mode
+icc2_shell> link_block
+Using libraries: FIBO_LIB tsl18fs120_scl
+Visiting block FIBO_LIB:routing_done.design
+Design 'fibo' was successfully linked.
+1
+icc2_shell> report_utilization
+****************************************
+Report : report_utilization
+Design : fibo
+Version: U-2022.12-SP6
+Date   : Wed Oct 29 02:11:27 2025
+****************************************
+Utilization Ratio:                      0.6447
+Utilization options:
+ - Area calculation based on:           site_row of block routing_done
+ - Categories of objects excluded:      hard_macros macro_keepouts soft_macros io_cells hard_blockages 
+Total Area:                             1668.3520
+Total Capacity Area:                    1668.3520
+Total Area of cells:                    1075.6480
+Area of excluded objects:
+ - hard_macros         :                0.0000
+ - macro_keepouts      :                0.0000
+ - soft_macros         :                0.0000
+ - io_cells            :                0.0000
+ - hard_blockages      :                0.0000
+Total Area of excluded objects:         0.0000
+Ratio of excluded objects:              0.0000
+
+Utilization of site-rows with:
+ - Site 'unit':                         0.6447
+
+0.6447
+icc2_shell> exit
+Maximum memory usage for this session: 440.98 MB
+Maximum memory usage for this session including child processes: 440.98 MB
+CPU usage for this session:     30 seconds (  0.01 hours)
+Elapsed time for this session:    498 seconds (  0.14 hours)
+Thank you for using IC Compiler II.
+

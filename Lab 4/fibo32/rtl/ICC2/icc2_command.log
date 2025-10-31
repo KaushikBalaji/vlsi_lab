@@ -1,0 +1,133 @@
+#@ # 
+#@ # Running icc2_shell Version U-2022.12-SP6 for linux64 -- Aug 25, 2023
+#@ # Date:   Wed Oct 29 02:53:36 2025
+#@ # Run by: student@nila-eelab31.iitpkd.ac.in
+#@ 
+
+gui_set_pref_value -category {SelectByNamePalette} -key {ObjectType} -value {Logical Cells}
+open_lib /home/student/152502010/verilog/ex4/fibo32/rtl/ICC2/FIBO_LIB -edit
+open_lib /home/student/152502010/verilog/ex4/fibo32/rtl/ICC2/FIBO32_LIB -edit
+open_block /home/student/152502010/verilog/ex4/fibo32/rtl/ICC2/FIBO32_LIB:floorplan_done.design
+link_block
+win_set_filter -visible -class cell -filter {assembly_die_margin clock_margin hard_macro_margin hard_margin route_blockage_margin seal_ring_margin soft_margin}
+win_set_filter -visible -class pseudo_bump -filter {deleted}
+win_set_filter -visible -class pseudo_tsv -filter {deleted}
+win_set_filter -visible -class placement_blockage -filter {wiring} -layer {0-56}
+win_set_filter -expand_cell_types {soft_macro  }
+win_set_select_class -visible {cell port bound routing_blockage shaping_blockage pg_region bump_region pseudo_bump pseudo_tsv pin_blockage block_shielding topology_node topology_edge topology_repeater annotation_shape core_area die_area edit_group shape via terminal fill_cell placement_blockage }
+win_set_filter -class cell -filter {array assembly_die_margin clock_margin hard_macro_margin hard_margin route_blockage_margin seal_ring_margin soft_margin}
+win_set_filter -class pseudo_bump -filter {deleted}
+win_set_filter -class pseudo_tsv -filter {deleted}
+win_set_filter -class placement_blockage -filter {wiring} -layer {0-56}
+win_set_select_class {cell port bound routing_blockage shaping_blockage pg_region bump_region pseudo_bump pseudo_tsv pin_blockage topology_node topology_edge topology_repeater annotation_shape edit_group shape via placement_blockage }
+open_block /home/student/152502010/verilog/ex4/fibo32/rtl/ICC2/FIBO32_LIB:routing_done.design
+link_block
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRoutedPower -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRoutedSignal -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRoutedGround -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRoutedNWell -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRoutedPWell -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRoutedNWell -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRoutedPWell -value true
+win_set_filter -visible -class shape -filter {ground power signal} -layer {}
+win_set_filter -visible -class via -filter {ground power signal} -layer {}
+win_set_filter -class shape -filter {ground power signal} -layer {}
+win_set_filter -class via -filter {ground power signal} -layer {}
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRoutedSignal -value true
+win_set_filter -visible -class shape -filter {ground power} -layer {}
+win_set_filter -visible -class via -filter {ground power} -layer {}
+win_set_filter -class shape -filter {ground power} -layer {}
+win_set_filter -class via -filter {ground power} -layer {}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {137.180 79.645}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {137.180 79.645}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {132.510 86.945}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {132.560 86.945}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {132.580 86.975}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {132.580 86.975}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {132.580 86.975}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {126.430 134.385}
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRoutedSignal -value false
+win_set_filter -visible -class shape -filter {ground power signal} -layer {}
+win_set_filter -visible -class via -filter {ground power signal} -layer {}
+win_set_filter -class shape -filter {ground power signal} -layer {}
+win_set_filter -class via -filter {ground power signal} -layer {}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {149.260 89.610}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {148.160 89.390}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {121.600 90.160}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {121.600 90.160}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {7.685 87.415}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {31.060 88.510}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {31.170 88.510}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {31.170 88.290}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {7.025 84.780}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {90.325 77.865}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {90.435 77.755}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {90.435 77.755}
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRoutedSignal -value true
+win_set_filter -visible -class shape -filter {ground power} -layer {}
+win_set_filter -visible -class via -filter {ground power} -layer {}
+win_set_filter -class shape -filter {ground power} -layer {}
+win_set_filter -class via -filter {ground power} -layer {}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {63.655 79.950}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {63.655 79.950}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {68.425 77.100}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {68.425 77.100}
+win_select_objects -slct_targets global -at {68.580 77.150} -radius 0.0137
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {67.265 76.560}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {67.270 76.555}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {67.270 76.555}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {67.270 76.555}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {77.920 60.415}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {99.655 72.925}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {99.655 72.925}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {118.530 25.515}
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRoutedSignal -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRoutedClock -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRoutedReset -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRoutedScan -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRoutedTieHigh -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRoutedTieLow -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRoutedNWell -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRoutedPWell -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRoutedNoNet -value false
+win_set_filter -visible -class shape -filter {clock ground no_net nwell power pwell reset scan signal tie_high tie_low} -layer {}
+win_set_filter -visible -class via -filter {clock ground no_net nwell power pwell reset scan signal tie_high tie_low} -layer {}
+win_set_filter -class shape -filter {clock ground no_net nwell power pwell reset scan signal tie_high tie_low} -layer {}
+win_set_filter -class via -filter {clock ground no_net nwell power pwell reset scan signal tie_high tie_low} -layer {}
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRoutedSignal -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRoutedClock -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRoutedReset -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRoutedScan -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRoutedTieHigh -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRoutedTieLow -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRoutedNWell -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRoutedPWell -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRoutedNoNet -value true
+win_set_filter -visible -class shape -filter {ground power} -layer {}
+win_set_filter -visible -class via -filter {ground power} -layer {}
+win_set_filter -class shape -filter {ground power} -layer {}
+win_set_filter -class via -filter {ground power} -layer {}
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRouted -value false
+win_set_select_class -visible {cell port bound routing_blockage shaping_blockage pg_region bump_region pseudo_bump pseudo_tsv pin_blockage block_shielding topology_node topology_edge topology_repeater annotation_shape core_area die_area edit_group via terminal fill_cell placement_blockage }
+win_set_select_class {cell port bound routing_blockage shaping_blockage pg_region bump_region pseudo_bump pseudo_tsv pin_blockage topology_node topology_edge topology_repeater annotation_shape edit_group via placement_blockage }
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRouted -value true
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectRouted -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting selectRouted -value true
+win_set_select_class -visible {cell port bound routing_blockage shaping_blockage pg_region bump_region pseudo_bump pseudo_tsv pin_blockage block_shielding topology_node topology_edge topology_repeater annotation_shape core_area die_area edit_group shape via terminal fill_cell placement_blockage }
+win_set_select_class {cell port bound routing_blockage shaping_blockage pg_region bump_region pseudo_bump pseudo_tsv pin_blockage topology_node topology_edge topology_repeater annotation_shape edit_group shape via placement_blockage }
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRoutedSignal -value false
+gui_set_setting -window [gui_get_current_window -types Layout -mru] -setting showRoutedClock -value false
+win_set_filter -visible -class shape -filter {clock ground power signal} -layer {}
+win_set_filter -visible -class via -filter {clock ground power signal} -layer {}
+win_set_filter -class shape -filter {clock ground power signal} -layer {}
+win_set_filter -class via -filter {clock ground power signal} -layer {}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 2 -at_point {79.020 80.830}
+gui_zoom -window [gui_get_current_window -types Layout -mru] -factor 0.5 -at_point {79.020 80.830}
+close_blocks -force -purge
+set_working_design_stack FIBO32_LIB:floorplan_done.design
+win_set_filter -visible -class shape -filter {} -layer {}
+win_set_filter -visible -class via -filter {} -layer {}
+win_set_filter -class shape -filter {} -layer {}
+win_set_filter -class via -filter {} -layer {}
+close_blocks -force -purge
+exit

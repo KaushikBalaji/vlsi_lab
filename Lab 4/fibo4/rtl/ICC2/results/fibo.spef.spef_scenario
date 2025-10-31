@@ -1,0 +1,3 @@
+./results/fibo.spef.p1_125.spef for scenarios: 
+	 scenario: func::nom, corner type: late/early
+

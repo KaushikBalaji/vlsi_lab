@@ -1,0 +1,19 @@
+#@ # 
+#@ # Running lm_shell Version U-2022.12-SP6 for linux64 -- Aug 25, 2023
+#@ # Date:   Wed Oct 29 02:28:23 2025
+#@ # Run by: student@nila-eelab31.iitpkd.ac.in
+#@ 
+
+start_gui
+gui_set_pref_value -category {SelectByNamePalette} -key {ObjectType} -value {Logical Cells}
+create_workspace -flow exploration -technology /home/SCL_PDK/SCLPDK_V3.0_KIT/scl180/digital_pnr_kit/snps/non_rh/4M1L/SCL_4LM.tf ExplorationWorkspace
+read_db { /home/SCL_PDK/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/4M1IL/liberty/lib_flow_ss/tsl18fs120_scl_ss.db /home/SCL_PDK/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/4M1IL/liberty/lib_flow_ff/tsl18fs120_scl_ff.db}
+## Reading physical library (.lef) file
+read_lef /home/SCL_PDK/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/4M1IL/lef/scl18fs120_tech.lef
+read_lef /home/SCL_PDK/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/4M1IL/lef/scl18fs120_std.lef
+## Reading Graphical Data stream (.gds) file
+read_gds /home/SCL_PDK/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/4M1IL/gds/scl18fs120.gds
+group_libs
+check_workspace
+process_workspaces
+exit

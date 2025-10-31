@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : fibo
+Version: U-2022.12-SP5
+Date   : Wed Oct 29 01:03:42 2025
+****************************************
+
+Library(s) Used:
+
+    tsl18fs120_scl_ss (File: /home/SCL_PDK/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/4M1IL/liberty/lib_flow_ss/tsl18fs120_scl_ss.db)
+
+Number of ports:                            6
+Number of nets:                            32
+Number of cells:                           27
+Number of combinational cells:             19
+Number of sequential cells:                 8
+Number of macros/black boxes:               0
+Number of buf/inv:                          8
+Number of references:                      19
+
+Combinational area:                495.490008
+Buf/Inv area:                      112.900001
+Noncombinational area:             598.980003
+Macro/Black Box area:                0.000000
+Net Interconnect area:              10.863720
+
+Total cell area:                  1094.470012
+Total area:                       1105.333731
+1

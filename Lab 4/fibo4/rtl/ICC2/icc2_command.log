@@ -1,0 +1,23 @@
+#@ # 
+#@ # Running icc2_shell Version U-2022.12-SP6 for linux64 -- Aug 25, 2023
+#@ # Date:   Wed Oct 29 02:10:49 2025
+#@ # Run by: student@nila-eelab31.iitpkd.ac.in
+#@ 
+
+gui_set_pref_value -category {SelectByNamePalette} -key {ObjectType} -value {Logical Cells}
+open_lib /home/student/152502010/verilog/ex4/fibo/rtl/ICC2/FIBO_LIB -edit
+open_block /home/student/152502010/verilog/ex4/fibo/rtl/ICC2/FIBO_LIB:routing_done.design
+link_block
+win_set_filter -visible -class cell -filter {assembly_die_margin clock_margin hard_macro_margin hard_margin route_blockage_margin seal_ring_margin soft_margin}
+win_set_filter -visible -class pseudo_bump -filter {deleted}
+win_set_filter -visible -class pseudo_tsv -filter {deleted}
+win_set_filter -visible -class placement_blockage -filter {wiring} -layer {0-56}
+win_set_filter -expand_cell_types {soft_macro  }
+win_set_select_class -visible {cell port bound routing_blockage shaping_blockage pg_region bump_region pseudo_bump pseudo_tsv pin_blockage block_shielding topology_node topology_edge topology_repeater annotation_shape core_area die_area edit_group shape via terminal fill_cell placement_blockage }
+win_set_filter -class cell -filter {array assembly_die_margin clock_margin hard_macro_margin hard_margin route_blockage_margin seal_ring_margin soft_margin}
+win_set_filter -class pseudo_bump -filter {deleted}
+win_set_filter -class pseudo_tsv -filter {deleted}
+win_set_filter -class placement_blockage -filter {wiring} -layer {0-56}
+win_set_select_class {cell port bound routing_blockage shaping_blockage pg_region bump_region pseudo_bump pseudo_tsv pin_blockage topology_node topology_edge topology_repeater annotation_shape edit_group shape via placement_blockage }
+report_utilization
+exit

@@ -1,0 +1,60 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : fibo
+Version: U-2022.12-SP5
+Date   : Wed Oct 29 02:26:38 2025
+****************************************
+
+Operating Conditions: tsl18fs120_scl_ss   Library: tsl18fs120_scl_ss
+Wire Load Model Mode: top
+
+  Startpoint: a_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: a_reg[17] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fibo               16000                 tsl18fs120_scl_ss
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  a_reg[0]/CP (dfprb2)                     0.00       0.00 r
+  a_reg[0]/QN (dfprb2)                     0.51       0.51 f
+  U8/ZN (inv0d2)                           0.11       0.62 r
+  add_9/A[0] (fibo_DW01_add_1)             0.00       0.62 r
+  add_9/U359/Z (buffd7)                    0.13       0.75 r
+  add_9/U780/ZN (nd02d2)                   0.06       0.80 f
+  add_9/U585/ZN (oai21d2)                  0.37       1.18 r
+  add_9/U435/ZN (aoi21d2)                  0.25       1.42 f
+  add_9/U578/ZN (oai21d2)                  0.37       1.79 r
+  add_9/U571/ZN (oaim21d4)                 0.37       2.17 r
+  add_9/U568/ZN (invbda)                   0.12       2.28 f
+  add_9/U553/ZN (oai21d2)                  0.43       2.71 r
+  add_9/U554/ZN (nd02d2)                   0.09       2.80 f
+  add_9/U556/ZN (nd02d2)                   0.09       2.89 r
+  add_9/SUM[17] (fibo_DW01_add_1)          0.00       2.89 r
+  a_reg[17]/D (dfcrq4)                     0.00       2.89 r
+  data arrival time                                   2.89
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  clock uncertainty                       -0.10       1.90
+  a_reg[17]/CP (dfcrq4)                    0.00       1.90 r
+  library setup time                      -0.16       1.74
+  data required time                                  1.74
+  -----------------------------------------------------------
+  data required time                                  1.74
+  data arrival time                                  -2.89
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -1.15
+
+
+1

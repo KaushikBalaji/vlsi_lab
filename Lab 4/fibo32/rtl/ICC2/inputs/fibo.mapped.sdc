@@ -1,0 +1,50 @@
+###################################################################
+
+# Created by write_sdc on Wed Oct 29 02:26:38 2025
+
+###################################################################
+set sdc_version 2.1
+
+set_units -time ns -resistance kOhm -capacitance pF -voltage V -current uA
+set_max_transition 0.2 [current_design]
+create_clock [get_ports clk]  -period 2  -waveform {0 1}
+set_clock_uncertainty 0.1  [get_clocks clk]
+set_max_transition 0.15 -clock_path [get_clocks clk]
+set_input_delay -clock clk  -max 0.25  [get_ports clk]
+set_input_delay -clock clk  -max 0.25  [get_ports reset]
+set_output_delay -clock clk  -max 0.25  [get_ports {fib_out[31]}]
+set_output_delay -clock clk  -max 0.25  [get_ports {fib_out[30]}]
+set_output_delay -clock clk  -max 0.25  [get_ports {fib_out[29]}]
+set_output_delay -clock clk  -max 0.25  [get_ports {fib_out[28]}]
+set_output_delay -clock clk  -max 0.25  [get_ports {fib_out[27]}]
+set_output_delay -clock clk  -max 0.25  [get_ports {fib_out[26]}]
+set_output_delay -clock clk  -max 0.25  [get_ports {fib_out[25]}]
+set_output_delay -clock clk  -max 0.25  [get_ports {fib_out[24]}]
+set_output_delay -clock clk  -max 0.25  [get_ports {fib_out[23]}]
+set_output_delay -clock clk  -max 0.25  [get_ports {fib_out[22]}]
+set_output_delay -clock clk  -max 0.25  [get_ports {fib_out[21]}]
+set_output_delay -clock clk  -max 0.25  [get_ports {fib_out[20]}]
+set_output_delay -clock clk  -max 0.25  [get_ports {fib_out[19]}]
+set_output_delay -clock clk  -max 0.25  [get_ports {fib_out[18]}]
+set_output_delay -clock clk  -max 0.25  [get_ports {fib_out[17]}]
+set_output_delay -clock clk  -max 0.25  [get_ports {fib_out[16]}]
+set_output_delay -clock clk  -max 0.25  [get_ports {fib_out[15]}]
+set_output_delay -clock clk  -max 0.25  [get_ports {fib_out[14]}]
+set_output_delay -clock clk  -max 0.25  [get_ports {fib_out[13]}]
+set_output_delay -clock clk  -max 0.25  [get_ports {fib_out[12]}]
+set_output_delay -clock clk  -max 0.25  [get_ports {fib_out[11]}]
+set_output_delay -clock clk  -max 0.25  [get_ports {fib_out[10]}]
+set_output_delay -clock clk  -max 0.25  [get_ports {fib_out[9]}]
+set_output_delay -clock clk  -max 0.25  [get_ports {fib_out[8]}]
+set_output_delay -clock clk  -max 0.25  [get_ports {fib_out[7]}]
+set_output_delay -clock clk  -max 0.25  [get_ports {fib_out[6]}]
+set_output_delay -clock clk  -max 0.25  [get_ports {fib_out[5]}]
+set_output_delay -clock clk  -max 0.25  [get_ports {fib_out[4]}]
+set_output_delay -clock clk  -max 0.25  [get_ports {fib_out[3]}]
+set_output_delay -clock clk  -max 0.25  [get_ports {fib_out[2]}]
+set_output_delay -clock clk  -max 0.25  [get_ports {fib_out[1]}]
+set_output_delay -clock clk  -max 0.25  [get_ports {fib_out[0]}]
+set_input_transition -max 0.2  [get_ports clk]
+set_input_transition -min 0.2  [get_ports clk]
+set_input_transition -max 0.2  [get_ports reset]
+set_input_transition -min 0.2  [get_ports reset]

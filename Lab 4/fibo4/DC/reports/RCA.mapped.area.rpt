@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : RCA
+Version: U-2022.12-SP5
+Date   : Wed Oct 29 00:26:28 2025
+****************************************
+
+Library(s) Used:
+
+    tsl18fs120_scl_ss (File: /home/SCL_PDK/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/4M1IL/liberty/lib_flow_ss/tsl18fs120_scl_ss.db)
+
+Number of ports:                          464
+Number of nets:                           779
+Number of cells:                          384
+Number of combinational cells:            250
+Number of sequential cells:                98
+Number of macros/black boxes:               0
+Number of buf/inv:                         56
+Number of references:                      36
+
+Combinational area:               5857.750125
+Buf/Inv area:                      909.270007
+Noncombinational area:            6039.800140
+Macro/Black Box area:                0.000000
+Net Interconnect area:             195.719961
+
+Total cell area:                 11897.550265
+Total area:                      12093.270226
+1

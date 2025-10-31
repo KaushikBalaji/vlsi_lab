@@ -1,0 +1,51 @@
+ 
+                              IC Compiler II (TM)
+
+             Version U-2022.12-SP6 for linux64 - Aug 25, 2023 -SLE
+
+                    Copyright (c) 1988 - 2023 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Information: Term was not able to be set up using xterm-256color . Using "xterm" by default instead. (CLE-10)
+icc2_shell> open_block /home/student/152502010/verilog/ex4/fibo32/rtl/ICC2/FIBO32_LIB:floorplan_done.design
+Information: User units loaded from library 'tsl18fs120_scl' (LNK-040)
+Opening block 'FIBO32_LIB:floorplan_done.design' in edit mode
+icc2_shell> link_block
+Using libraries: FIBO32_LIB tsl18fs120_scl
+Visiting block FIBO32_LIB:floorplan_done.design
+Warning: No valid clocks available in mode 'default'. Setting clock frequency to 1 GHz. (POW-034)
+Design 'fibo' was successfully linked.
+1
+icc2_shell> open_block /home/student/152502010/verilog/ex4/fibo32/rtl/ICC2/FIBO32_LIB:routing_done.design
+Opening block 'FIBO32_LIB:routing_done.design' in edit mode
+icc2_shell> link_block
+Using libraries: FIBO32_LIB tsl18fs120_scl
+Visiting block FIBO32_LIB:routing_done.design
+Design 'fibo' was successfully linked.
+1
+icc2_shell> close_blocks -force -purge
+Closing block 'FIBO32_LIB:routing_done.design'
+icc2_shell> set_working_design_stack FIBO32_LIB:floorplan_done.design
+icc2_shell> 
+icc2_shell> close_blocks -force -purge
+Closing block 'FIBO32_LIB:floorplan_done.design'
+icc2_shell> exit
+Maximum memory usage for this session: 545.62 MB
+Maximum memory usage for this session including child processes: 545.62 MB
+CPU usage for this session:     63 seconds (  0.02 hours)
+Elapsed time for this session:    999 seconds (  0.28 hours)
+Thank you for using IC Compiler II.
+
