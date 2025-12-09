@@ -9,3 +9,4 @@ set_clock_uncertainty -setup 0.100 [get_clocks clk]
 set_clock_uncertainty -hold 0.100 [get_clocks clk]
 set_max_transition 0.20 [current_design]
 set_max_transition -clock_path 0.150 [get_clocks clk]
+

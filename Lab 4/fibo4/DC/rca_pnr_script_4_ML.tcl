@@ -31,7 +31,8 @@ start_gui
 create_workspace -flow exploration -technology /home/SCL_PDK/SCLPDK_V3.0_KIT/scl180/digital_pnr_kit/snps/non_rh/4M1L/SCL_4LM.tf ExplorationWorkspace
 
 ## Reading Logical library (.db) file
-read_db { /home/SCL_PDK/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/4M1IL/liberty/lib_flow_ss/tsl18fs120_scl_ss.db /home/SCL_PDK/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/4M1IL/liberty/lib_flow_ff/tsl18fs120_scl_ff.db}
+read_db { /home/SCL_PDK/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/4M1IL/liberty/lib_flow_ss/tsl18fs120_scl_ss.db 
+          /home/SCL_PDK/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/4M1IL/liberty/lib_flow_ff/tsl18fs120_scl_ff.db}
 
 ## Reading physical library (.lef) file
 read_lef /home/SCL_PDK/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/4M1IL/lef/scl18fs120_tech.lef

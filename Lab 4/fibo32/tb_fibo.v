@@ -11,14 +11,10 @@ initial begin
 end
 
 initial begin
-	reset = 1;
-	#20;
-	reset = 0;
-	#40;
-	reset = 0;
-	#60;
+	reset = 1; #20;
+	reset = 0; #40;
+	reset = 0; #60;
 	
-
 	$finish;
 end
 
